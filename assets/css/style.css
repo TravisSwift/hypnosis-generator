@@ -1,44 +1,71 @@
-/* Dropdown Button */
-.dropbtn {
-    background-color: #3498DB;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Add a background color to the whole page */
+body {
+  background-color: hsl(206, 46%, 75%);
+  font-family: Arial, sans-serif;
+}
+
+/* Center content and set a max width */
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Add some spacing and centering for header */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Calming colors for buttons */
+.button-play, .button-stop {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+/* For track list */
+.track-list {
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+.track-item {
+  background-color: #ddd;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 4px;
+}
+
+/* Make it calm and non-distractive */
+.track-item h3, .track-item p {
+  margin: 5px 0;
+}
+
+/* Additional styles for a timer */
+.timer {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+  
+  .logo {
+    height: 100px;
+    width: 100px;
   }
-  
-  /* Dropdown button on hover & focus */
-  .dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;}
+ 
